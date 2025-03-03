@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones con Cadenas</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Operaciones con Cadenas</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cadenas.html">Cadenas</a></li>
+                <li><a href="operaciones.html">Operaciones</a></li>
+                <li><a href="algoritmos.html">Algoritmos</a></li>
+                <li><a href="ejemplos.html">Ejemplos</a></li>
+                <li><a href="referencias.html">Referencias</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Principales Operaciones con Cadenas</h2>
+        <p>Las cadenas de texto son una de las estructuras de datos más usadas en programación. Aquí te mostramos las operaciones más comunes con ejemplos en distintos lenguajes.</p>
+
+        <h3>1. Concatenación de Cadenas</h3>
+        <p>Unir dos cadenas en una sola.</p>
+
+        <h4>JavaScript</h4>
+        <pre>
+<code>
+let cadena1 = "Hola";
+let cadena2 = "Mundo";
+console.log(cadena1 + " " + cadena2); // "Hola Mundo"
+</code>
+        </pre>
+
+        <h4>Python</h4>
+        <pre>
+<code>
+cadena1 = "Hola"
+cadena2 = "Mundo"
+print(cadena1 + " " + cadena2) # "Hola Mundo"
+</code>
+        </pre>
+
+        <h3>2. Obtener la Longitud de una Cadena</h3>
+        <p>Determina cuántos caracteres tiene una cadena.</p>
+
+        <h4>JavaScript</h4>
+        <pre>
+<code>
+let texto = "Hola Mundo";
+console.log(texto.length); // 10
+</code>
+        </pre>
+
+        <h4>Python</h4>
+        <pre>
+<code>
+texto = "Hola Mundo"
+print(len(texto)) # 10
+</code>
+        </pre>
+
+        <h3>3. Convertir a Mayúsculas y Minúsculas</h3>
+        <p>Convierte el texto a mayúsculas o minúsculas.</p>
+
+        <h4>Java</h4>
+        <pre>
+<code>
+String texto = "Hola Mundo";
+System.out.println(texto.toUpperCase()); // "HOLA MUNDO"
+System.out.println(texto.toLowerCase()); // "hola mundo"
+</code>
+        </pre>
+
+        <h4>C#</h4>
+        <pre>
+<code>
+string texto = "Hola Mundo";
+Console.WriteLine(texto.ToUpper()); // "HOLA MUNDO"
+Console.WriteLine(texto.ToLower()); // "hola mundo"
+</code>
+        </pre>
+
+        <h3>4. Extraer Subcadenas</h3>
+        <p>Obtener parte de una cadena.</p>
+
+        <h4>JavaScript</h4>
+        <pre>
+<code>
+let texto = "Hola Mundo";
+console.log(texto.substring(0, 4)); // "Hola"
+</code>
+        </pre>
+
+        <h4>Python</h4>
+        <pre>
+<code>
+texto = "Hola Mundo"
+print(texto[0:4]) # "Hola"
+</code>
+        </pre>
+
+        <h3>5. Reemplazar Texto en una Cadena</h3>
+        <p>Reemplaza una parte de la cadena por otra.</p>
+
+        <h4>JavaScript</h4>
+        <pre>
+<code>
+let texto = "Hola Mundo";
+console.log(texto.replace("Mundo", "JavaScript")); // "Hola JavaScript"
+</code>
+        </pre>
+
+        <h4>Python</h4>
+        <pre>
+<code>
+texto = "Hola Mundo"
+print(texto.replace("Mundo", "Python")) # "Hola Python"
+</code>
+        </pre>
+
+        <h3>6. Eliminar Espacios en Blanco</h3>
+        <p>Quita los espacios al inicio y al final de una cadena.</p>
+
+        <h4>Java</h4>
+        <pre>
+<code>
+String texto = "  Hola Mundo  ";
+System.out.println(texto.trim()); // "Hola Mundo"
+</code>
+        </pre>
+
+        <h4>C++</h4>
+        <pre>
+<code>
+#include &lt;iostream&gt;
+#include &lt;algorithm&gt;
+using namespace std;
+
+string trim(const string &texto) {
+    size_t inicio = texto.find_first_not_of(" ");
+    size_t fin = texto.find_last_not_of(" ");
+    return texto.substr(inicio, fin - inicio + 1);
+}
+
+int main() {
+    string texto = "  Hola Mundo  ";
+    cout << trim(texto) << endl; // "Hola Mundo"
+    return 0;
+}
+</code>
+        </pre>
+
+    </section>
+
+    <footer>
+        <p>© 2025 Portal de Cadenas</p>
+    </footer>
+</body>
+</html>
