@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejemplos de Manejo de Cadenas</title>
     <link rel="stylesheet" href="estilos.css">
+    
+    <!-- Prism.js para resaltar código -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css">
 </head>
 <body>
     <header>
@@ -28,30 +31,25 @@
         <h3>📌 1. Invertir una Cadena</h3>
 
         <h4>JavaScript</h4>
-        <pre>
-<code>
+        <pre><code class="language-javascript">
 function invertirCadena(str) {
     return str.split("").reverse().join("");
 }
 console.log(invertirCadena("Hola")); // "aloH"
-</code>
-        </pre>
+        </code></pre>
 
         <h4>Python</h4>
-        <pre>
-<code>
+        <pre><code class="language-python">
 def invertir_cadena(texto):
     return texto[::-1]
 
 print(invertir_cadena("Hola")) # "aloH"
-</code>
-        </pre>
+        </code></pre>
 
         <h3>📌 2. Contar la Frecuencia de Caracteres</h3>
 
         <h4>Java</h4>
-        <pre>
-<code>
+        <pre><code class="language-java">
 import java.util.HashMap;
 
 public class FrecuenciaCaracteres {
@@ -66,12 +64,10 @@ public class FrecuenciaCaracteres {
         System.out.println(frecuencia);
     }
 }
-</code>
-        </pre>
+        </code></pre>
 
         <h4>C++</h4>
-        <pre>
-<code>
+        <pre><code class="language-cpp">
 #include &lt;iostream&gt;
 #include &lt;map&gt;
 using namespace std;
@@ -90,46 +86,38 @@ int main() {
 
     return 0;
 }
-</code>
-        </pre>
+        </code></pre>
 
         <h3>📌 3. Verificar si una palabra está dentro de otra</h3>
 
         <h4>JavaScript</h4>
-        <pre>
-<code>
+        <pre><code class="language-javascript">
 let texto = "Hola Mundo";
 let buscar = "Mundo";
 console.log(texto.includes(buscar)); // true
-</code>
-        </pre>
+        </code></pre>
 
         <h4>Python</h4>
-        <pre>
-<code>
+        <pre><code class="language-python">
 texto = "Hola Mundo"
 buscar = "Mundo"
 print(buscar in texto) # True
-</code>
-        </pre>
+        </code></pre>
 
         <h3>📌 4. Eliminar espacios al inicio y al final</h3>
 
         <h4>Java</h4>
-        <pre>
-<code>
+        <pre><code class="language-java">
 public class Main {
     public static void main(String[] args) {
         String texto = " Hola Mundo ";
         System.out.println(texto.trim());
     }
 }
-</code>
-        </pre>
+        </code></pre>
 
         <h4>C#</h4>
-        <pre>
-<code>
+        <pre><code class="language-csharp">
 using System;
 
 class Program {
@@ -138,8 +126,7 @@ class Program {
         Console.WriteLine(texto.Trim());
     }
 }
-</code>
-        </pre>
+        </code></pre>
 
     </section>
 
@@ -147,6 +134,13 @@ class Program {
         <p>© 2025 Portal de Cadenas</p>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- Cargar Prism.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js"></script>
+    <!-- Cargar Prism.js y los lenguajes adicionales -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-java.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-csharp.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-cpp.min.js"></script>
 </body>
 </html>
