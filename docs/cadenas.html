@@ -3,12 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>¿Qué son las Cadenas?</title>
+    <title>¿Qué son las Cadenas en Computación?</title>
     <link rel="stylesheet" href="estilos.css">
+
+    <!-- Prism.js: Tema por defecto -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css">
+
+    <!-- Cargar Prism.js y los lenguajes adicionales -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-c.min.js"></script>
 </head>
 <body>
     <header>
-        <h1>¿Qué son las Cadenas en Computación?</h1>
+        <h1>¿Qué son las Cadenas como Estructuras de Datos en Computación?</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
@@ -22,14 +29,42 @@
     </header>
 
     <section>
-        <h2>Definición de Cadenas</h2>
-        <p>En informática, una cadena (o string) es una secuencia de caracteres almacenada en la memoria.</p>
-        <h3>Ejemplo:</h3>
-        <p>La cadena <code>"Hola Mundo"</code> tiene 10 caracteres.</p>
+        <h2>¿Qué son las cadenas como estructuras de datos en computación?</h2>
+        <p>
+            En computación, una <strong>cadena</strong> (<em>string</em>) es una secuencia ordenada de caracteres que se usa para representar texto. 
+            Pueden incluir letras, números, símbolos y espacios.
+        </p>
+        <p>
+            Desde el punto de vista de estructuras de datos, una cadena es similar a un <strong>arreglo (array)</strong> de caracteres, pero con diferencias según el lenguaje de programación. 
+            Algunas implementaciones tratan las cadenas como <strong>inmutables</strong> (como en Python y Java), mientras que otras permiten modificarlas (como en C o C++).
+        </p>
+
+        <h3>📌 Ejemplo de representación en memoria (en C)</h3>
+
+        <h4>🔹 Definición de una cadena en C</h4>
+        <pre><code class="language-c">
+char palabra[] = "Hola";
+        </code></pre>
+
+        <h4>🔹 Equivalente a una representación en memoria</h4>
+        <pre><code class="language-css">
+['H', 'o', 'l', 'a', '\0']
+        </code></pre>
+
+        <p>
+            Aquí, <code>\0</code> es un carácter especial que indica el final de la cadena en lenguajes como C.
+        </p>
     </section>
 
     <footer>
         <p>© 2025 Portal de Cadenas</p>
     </footer>
+
+    <!-- Forzar el resaltado de código -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            Prism.highlightAll();
+        });
+    </script>
 </body>
 </html>
